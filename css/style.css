@@ -304,5 +304,65 @@ h1{
     background-blend-mode: soft-light,screen;
 }
 
-  
 /* Boton register */
+
+
+.fondotextarea{
+  background-color: #AAAAAA;
+}
+
+.fs-ns{
+  @media screen {
+    
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+/* Estilos para los enlaces del menú */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+/* Ajustes en los textos para que sean responsivos */
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsividad para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      display: none; /* Esconde el menú en móviles */
+  }
+
+  .menu-toggle {
+      display: block; /* Muestra el botón de menú */
+  }
+
+  .menu-active {
+      display: flex; /* Muestra el menú si está activo */
+  }
+}
+
+.menu-toggle {
+  display: none; /* Esconde el botón de menú en pantallas grandes */
+}

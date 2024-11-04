@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top-0 py-1 lg:py-2 w-full bg-transparent lg:relative z-50 ">
+        <nav class="z-10 sticky top-0 left-0 right-0 max-w-4xl xl:max-w-5xl mx-auto px-5 py-2.5 lg:border-none lg:py-4">
+            <div class="flex items-center justify-between">
+                <button>
+                    <div class="flex items-center justify-center space-x-2">
+                        <a href="index.html" class="text-white font-bold text-2xl">EG</a>
+                    </div>
+                </button>
+                <div class="hidden lg:block justify-center items-center">
+                    <ul class="flex justify-center items-center space-x-10 text-base font-bold text-white">
+                        <li
+                            class="hover:underline justify-center items hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li
+                            class="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
+                            <a href="#">Our services</a>
+                        </li>
+                        <li
+                            class="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li
+                            class="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
+                            <a href="#">FQA</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center justify-center lg:hidden">
+                    <button class="focus:outline-none text-slate-200 dark:text-white"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="text-2xl text-slate-800 dark:text-white focus:outline-none active:scale-110 active:text-red-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            
+            <!-- TODO "Añadiendo EMAILJS a mi proyecto" -->
+            <form id="form" action="#" class="space-y-8">
+                <div class="field">
+                    <label for="emailjs_email" class="block mb-2 text-sm font-medium text-white">Your email</label>
+                    <input type="email" id="emailjs_email" class="shadow-sm  border fondotextarea  text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  dark:border-gray-600  dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
+                </div>
+                <div class="field">
+                    <label for="emailjs_name" class="block mb-2 text-sm font-medium text-white ">Subject</label>
+                    <input type="text" id="emailjs_name" class="block fondotextarea p-3 w-full text-sm text-white  rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  dark:border-gray-600  dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
+                </div>
+                <div class="field sm:col-span-2">
+                    <label for="emailjs_messaje" class="block mb-2 text-white text-sm font-medium ">Your message</label>
+                    <textarea id="emailjs_messaje" rows="6" class="fondotextarea block p-2.5 w-full text-sm text-gray-900  rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 placeholder-white:  dark:border-gray-600  dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"></textarea>
+                </div>
+                <button id="button" type="submit" class="learn-more elboton" value="Send Email">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Register</span>
+                </button>
+            </form>
+        </div>
+      </section>
+      <script src="../js/app.js"></script>
+      <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('ZOMW9eLI7xmFkQXae')
+</script>
+</body>
+</html>

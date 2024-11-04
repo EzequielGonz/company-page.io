@@ -24,7 +24,6 @@ function animateCounter(counter) {
 
   update();
 }
-
 // Inicia la animación para cada contador
 counters.forEach((counter) => {
   animateCounter(counter);
@@ -35,7 +34,6 @@ counters.forEach((counter) => {
 
 
 //Agregando EMAILJS en el Proyecto!
-
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -44,7 +42,7 @@ document.getElementById('form')
 
    btn.value = 'Sending...';
 
-   const serviceID = 'service_668jtxn';
+   const serviceID = 'service_a432t68';
    const templateID = 'template_pv8pd8m';
 
    emailjs.sendForm(serviceID, templateID, this)
@@ -56,5 +54,6 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
 
 //Agregando EMAILJS en el Proyecto!
